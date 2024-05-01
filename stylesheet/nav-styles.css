@@ -3,18 +3,17 @@ body {
   margin: 0;
   padding: 0;
   border: 0;
-  background-color: cornsilk;
 }
 
 a:active,
 a:hover {
   outline: 0;
-  background-color: whitesmoke;
+  background-color: bisque;
 }
 
 a:visited {
   outline: 0;
-  background-color: whitesmoke;
+  background-color: bisque;
   color: aqua;
 }
 
@@ -84,29 +83,29 @@ a:visited {
   max-height: 9999px;
 }
 
-/* header {
+header {
   display: flex;
   justify-content: space-between;
-} */
+}
 
 @media screen and (min-width: 700px) {
 }
 
-/* header {
+header {
   position: fixed;
   z-index: 3;
   width: 100%;
   left: 0;
   top: 0;
-} */
+}
 
-/* .logo {
+.logo {
   text-decoration: none;
   font-weight: bold;
   line-height: 55px;
   padding: 0 20px;
   color: black;
-} */
+}
 
 .fixed {
   position: fixed;

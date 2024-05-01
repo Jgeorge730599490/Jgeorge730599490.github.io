@@ -1,0 +1,88 @@
+/* sets up my css grid */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas:
+        "nav"
+        "main"
+        "sidebar"
+        "footer";
+  
+  
+  
+  }
+  
+  .navigation {
+    grid-area: nav;
+    background-color: #f4f4f4;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #e4e4e4;
+    padding: 20px;
+  }
+  
+  .main {
+    grid-area: main;
+    padding: 20px;
+    background-color: #fff;
+    overflow: auto;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  /* css grid for mobile */
+  @media (min-width: 768px) {
+    .grid-container {
+            display: grid;
+            grid-template-columns: 300px 1fr 300px;
+            grid-template-rows: auto 1fr auto;
+            grid-template-areas:
+                "nav main sidebar"
+                "nav main sidebar"
+                "footer footer footer";
+            height: 70vh;
+  
+  
+    }
+  }
+
+
+
+  /* for my three images */
+.grid-aside {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; /* Add some space between items */
+  }
+  .grid-item img {
+    width: 50%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+  }
+  .grid-item:hover img {
+    transform: scale(1.1) skew(10deg, 5deg);
+  }
